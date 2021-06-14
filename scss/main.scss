@@ -1,0 +1,18 @@
+// Variables
+
+// Colors
+$primary: #d03063;
+$secondary: #696969;
+
+// Focus
+$input-btn-focus-width: 0.1rem;
+$input-btn-focus-color-opacity: 0.25;
+// $input-btn-focus-box-shadow:    0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
+
+// Border radius
+$border-radius: 0.2rem;
+$border-radius-sm: 0.2rem;
+$border-radius-lg: 0.2rem;
+
+@import 'style';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
