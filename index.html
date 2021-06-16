@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap-icons/icons/alarm.svg"
     />
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Aruni Tech</title>
   </head>
@@ -28,13 +36,13 @@
         <div class="collapse navbar-collapse" id="navList">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item ms-3">
-              <a href="#" class="nav-link">Services</a>
+              <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item ms-3">
-              <a href="#" class="nav-link">Our Team</a>
+              <a href="#portfolio" class="nav-link">Our Work</a>
             </li>
             <li class="nav-item ms-3">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -48,7 +56,10 @@
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
           <div>
-            <h1>Improve Your <span class="text-warning">Technology</span></h1>
+            <h1>
+              Improve Your
+              <span class="text-warning">Technology</span>
+            </h1>
             <p class="lead my-4">
               We specialize in technology improvement and solving problem. It
               includes Web App Developing, Technology Consultant, and many more.
@@ -70,12 +81,27 @@
     <!-- About Us -->
     <section class="p-5 mt-4">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <img src="./img/teamwork.jpg" class="img-fluid w-50 rounded me-5" alt="teamwork">
+        <div
+          class="d-block d-md-flex justify-content-between align-items-center"
+        >
+          <img
+            src="./img/teamwork.jpg"
+            class="img-fluid img-w-50 mb-4 mb-md-0 rounded me-5"
+            alt="teamwork"
+          />
           <div>
-            <h6 class="text-primary text-uppercase">About Us</h6>
-            <h5>We are passionate people in technology and have strong vision for our goal.</h5>
-            <p class="lead my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni commodi, error rem voluptatum, obcaecati voluptatem fuga unde est fugit odio, doloremque aut veritatis atque quo? At pariatur ipsam sint vel! Consequuntur delectus tempora suscipit, iure totam autem? Quod, ea illum.</p>
+            <h6 class="text-primary text-uppercase">About</h6>
+            <h5>
+              We are just passionate people in technology and have strong vision
+              for our goal.
+            </h5>
+            <p class="lead my-4">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+              commodi, error rem voluptatum, obcaecati voluptatem fuga unde est
+              fugit odio, doloremque aut veritatis atque quo? At pariatur ipsam
+              sint vel! Consequuntur delectus tempora suscipit, iure totam
+              autem? Quod, ea illum.
+            </p>
             <button class="btn btn-dark">Read More</button>
           </div>
         </div>
@@ -83,17 +109,21 @@
     </section>
 
     <!-- Services -->
-    <section class="p-5 text-center">
+    <section id="services" class="p-5 text-center">
       <div class="container">
         <h6 class="text-primary text-uppercase">Services</h6>
-        <h5 class="mb-4">This is Our Core Services</h5>
+        <h5 class="mb-4">Our Core Services</h5>
         <div class="row g-4">
           <div class="col-lg col-md-6">
             <div class="card p-3 bg-dark text-light">
               <i class="h1 bi bi-menu-button mb-2"></i>
               <div class="card-body">
-                <h5 class="card-title">Web App Development</h5>
-                <p class="card-text py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem neque harum expedita. Quae, libero eum nemo temporibus accusamus aperiam.</p>
+                <h5 class="card-title">Software Development</h5>
+                <p class="card-text py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                  quidem neque harum expedita. Quae, libero eum nemo temporibus
+                  accusamus aperiam.
+                </p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
@@ -103,7 +133,11 @@
               <i class="h1 bi bi-person-check mb-2"></i>
               <div class="card-body">
                 <h5 class="card-title">Tech Consultant</h5>
-                <p class="card-text py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem neque harum expedita. Quae, libero eum nemo temporibus accusamus aperiam.</p>
+                <p class="card-text py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                  quidem neque harum expedita. Quae, libero eum nemo temporibus
+                  accusamus aperiam.
+                </p>
                 <a href="#" class="btn btn-light">Read More</a>
               </div>
             </div>
@@ -112,8 +146,12 @@
             <div class="card p-3 bg-dark text-light">
               <i class="h1 bi bi-window-dock mb-2"></i>
               <div class="card-body">
-                <h5 class="card-title">Front End Development</h5>
-                <p class="card-text py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem neque harum expedita. Quae, libero eum nemo temporibus accusamus aperiam.</p>
+                <h5 class="card-title">Web Application</h5>
+                <p class="card-text py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                  quidem neque harum expedita. Quae, libero eum nemo temporibus
+                  accusamus aperiam.
+                </p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
@@ -123,30 +161,269 @@
     </section>
 
     <!-- Our Values -->
-    <section class="p-5">
+    <section class="p-5 bg-light">
       <div class="container">
-        <div class="d-block d-md-flex justify-content-between">
-          <img src="./img/team-work.jpg" alt="" class="img-fluid w-25">
-          <div>
-            <h2>Lots Of Experience</h2>
-            <div class="row g-4">
-              <div class="col-md-6">
-                <h1 class="display-6 text-primary">100+</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt quo? Laboriosam, accusamus expedita hic molestias nihil doloremque deleniti est!</p>
-              </div>
-              <div class="col-md-6">
-                <h1 class="display-6 text-primary">50+</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt quo? Laboriosam, accusamus expedita hic molestias nihil doloremque.</p>
+        <h6 class="text-uppercase text-primary">Values</h6>
+        <h5 class="mb-4">We Have Good Experience In Our Fields</h5>
+        <div class="row mb-3 g-4">
+          <div class="col-md-4">
+            <h1 class="display-6 text-primary">100+</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, sunt quo? Laboriosam, accusamus expedita hic molestias
+              nihil doloremque deleniti est!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h1 class="display-6 text-primary">50+</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, sunt quo? Laboriosam, accusamus expedita hic molestias
+              nihil doloremque.
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h1 class="display-6 text-primary">95%</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-md-4">
+            <h1 class="display-6 text-primary">10+</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="p-5 bg-dark text-light text-center">
+      <div class="container">
+        <h6 class="text-primary text-uppercase">Portfolio</h6>
+        <h5 class="mb-4">Check Our Latest Work</h5>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="
+                card
+                border-dark
+                rounded-circle
+                position-relative
+                card-container
+              "
+            >
+              <img class="card-img" src="img/porto-1.jpg" alt="" />
+              <div
+                class="
+                  container-overlay
+                  position-absolute
+                  top-0
+                  bottom-0
+                  start-0
+                  end-0
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <button
+                  class="btn btn-warning rounded-circle mx-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#thumbnail-1"
+                >
+                  <i class="bi bi-eye"></i>
+                </button>
+                <button class="btn btn-warning rounded-circle mx-2">
+                  <i class="bi bi-link"></i>
+                </button>
               </div>
             </div>
-            <div class="row g-4">
-              <div class="col-md-6">
-                <h1 class="display-6 text-primary">90%</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="
+                card
+                border-dark
+                rounded-circle
+                position-relative
+                card-container
+              "
+            >
+              <img class="card-img" src="img/porto-2.jpg" alt="" />
+              <div
+                class="
+                  container-overlay
+                  position-absolute
+                  top-0
+                  bottom-0
+                  start-0
+                  end-0
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <button
+                  class="btn btn-warning rounded-circle mx-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#thumbnail-2"
+                >
+                  <i class="bi bi-eye"></i>
+                </button>
+                <button class="btn btn-warning rounded-circle mx-2">
+                  <i class="bi bi-link"></i>
+                </button>
               </div>
-              <div class="col-md-6">
-                <h1 class="display-6 text-primary">10+</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="
+                card
+                border-dark
+                rounded-circle
+                position-relative
+                card-container
+              "
+            >
+              <img class="card-img" src="img/porto-3.jpg" alt="" />
+              <div
+                class="
+                  container-overlay
+                  position-absolute
+                  top-0
+                  bottom-0
+                  start-0
+                  end-0
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <button
+                  class="btn btn-warning rounded-circle mx-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#thumbnail-3"
+                >
+                  <i class="bi bi-eye"></i>
+                </button>
+                <button class="btn btn-warning rounded-circle mx-2">
+                  <i class="bi bi-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="
+                card
+                border-dark
+                rounded-circle
+                position-relative
+                card-container
+              "
+            >
+              <img class="card-img" src="img/porto-4.jpg" alt="" />
+              <div
+                class="
+                  container-overlay
+                  position-absolute
+                  top-0
+                  bottom-0
+                  start-0
+                  end-0
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <button
+                  class="btn btn-warning rounded-circle mx-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#thumbnail-4"
+                >
+                  <i class="bi bi-eye"></i>
+                </button>
+                <button class="btn btn-warning rounded-circle mx-2">
+                  <i class="bi bi-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="
+                card
+                border-dark
+                rounded-circle
+                position-relative
+                card-container
+              "
+            >
+              <img class="card-img" src="img/porto-5.jpg" alt="" />
+              <div
+                class="
+                  container-overlay
+                  position-absolute
+                  top-0
+                  bottom-0
+                  start-0
+                  end-0
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <button
+                  class="btn btn-warning rounded-circle mx-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#thumbnail-5"
+                >
+                  <i class="bi bi-eye"></i>
+                </button>
+                <button class="btn btn-warning rounded-circle mx-2">
+                  <i class="bi bi-link"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="
+                card
+                border-dark
+                rounded-circle
+                position-relative
+                card-container
+              "
+            >
+              <img class="card-img" src="img/porto-6.jpg" alt="" />
+              <div
+                class="
+                  container-overlay
+                  position-absolute
+                  top-0
+                  bottom-0
+                  start-0
+                  end-0
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <button
+                  class="btn btn-warning rounded-circle mx-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#thumbnail-6"
+                >
+                  <i class="bi bi-eye"></i>
+                </button>
+                <button class="btn btn-warning rounded-circle mx-2">
+                  <i class="bi bi-link"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -154,19 +431,87 @@
       </div>
     </section>
 
-    <!-- Portfolio -->
-
-    <!-- Testimonials -->
+    <!-- TODO: Testimonials -->
 
     <!-- Contact Form -->
-
-     <!-- Newsletter -->
-     <section class="bg-primary text-light text-center p-5">
+    <section id="contact" class="p-5">
       <div class="container">
-        <div class="d-block d-lg-flex justify-content-between align-items-center">
+        <h6 class="text-primary text-uppercase">Contact</h6>
+        <h5>Get In Touch</h5>
+        <div class="row">
+          <div class="col-md">
+            <ul class="list-group list-group-flush lead py-5">
+              <li class="list-group-item d-flex align-items-center">
+                <span class="fw-bold me-2"
+                  ><i class="bi bi-map me-1"></i> Main Location:
+                </span>
+                108 Sudirman Streen, Jakarta Indonesia
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <span class="fw-bold me-2"
+                  ><i class="bi bi-telephone me-1"></i> Phone:
+                </span>
+                (+621) 555 5555
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <span class="fw-bold me-2"
+                  ><i class="bi bi-printer me-1"></i> Fax:
+                </span>
+                (+621) 222 2222
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <span class="fw-bold me-2"
+                  ><i class="bi bi-envelope me-1"></i> Mail:
+                </span>
+                aruni@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <form>
+              <div class="row">
+                <div class="col-md">
+                  <div class="mb-2">
+                    <label for="firstName" class="form-label"
+                      >First Name:</label
+                    >
+                    <input type="text" id="firstName" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="mb-2">
+                    <label for="lastName" class="form-label">Last Name:</label>
+                    <input type="text" id="lastName" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-control" />
+              </div>
+              <div class="mb-2">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" class="form-control" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-primary text-light text-center p-5">
+      <div class="container">
+        <div
+          class="d-block d-lg-flex justify-content-between align-items-center"
+        >
           <h4 class="mb-4 mb-lg-0">Join Our Newsletter</h4>
           <div class="input-group news-input mx-auto">
-            <input type="text" class="form-control"  placeholder="Email..." />
+            <input type="text" class="form-control" placeholder="Email..." />
             <button class="btn btn-dark">Subscribe</button>
           </div>
         </div>
@@ -174,7 +519,151 @@
     </section>
 
     <!-- Footer -->
+    <section class="p-5 bg-light text-center position-relative">
+      <div class="container">
+        <footer>
+          &copy; Copyright
+          <span class="text-primary fw-bolder">AruniTech</span>. All Rights
+          Reserved.
+        </footer>
+      </div>
+      <a href="#" class="position-absolute end-0 top-50 translate-middle me-2">
+        <i class="bi bi-arrow-up-circle text-primary h1"></i>
+      </a>
+    </section>
 
+    <!-- Modal -->
+    <div class="modal fade" id="thumbnail-1" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered position-relative">
+        <div class="row">
+          <img class="img-fluid" src="img/porto-1.jpg" alt="" />
+        </div>
+        <button
+          type="button"
+          class="
+            btn btn-transparent
+            position-absolute
+            top-0
+            start-50
+            translate-middle
+          "
+          data-bs-dismiss="modal"
+        >
+          <i class="bi bi-x fs-1 text-light"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="thumbnail-2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered position-relative">
+        <div class="row">
+          <img class="img-fluid" src="img/porto-2.jpg" alt="" />
+        </div>
+        <button
+          type="button"
+          class="
+            btn btn-transparent
+            position-absolute
+            top-0
+            start-50
+            translate-middle
+          "
+          data-bs-dismiss="modal"
+        >
+          <i class="bi bi-x fs-1 text-light"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="thumbnail-3" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered position-relative">
+        <div class="row">
+          <img class="img-fluid" src="img/porto-3.jpg" alt="" />
+        </div>
+        <button
+          type="button"
+          class="
+            btn btn-transparent
+            position-absolute
+            top-0
+            start-50
+            translate-middle
+          "
+          data-bs-dismiss="modal"
+        >
+          <i class="bi bi-x fs-1 text-light"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="thumbnail-4" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered position-relative">
+        <div class="row">
+          <img class="img-fluid" src="img/porto-4.jpg" alt="" />
+        </div>
+        <button
+          type="button"
+          class="
+            btn btn-transparent
+            position-absolute
+            top-0
+            start-50
+            translate-middle
+          "
+          data-bs-dismiss="modal"
+        >
+          <i class="bi bi-x fs-1 text-light"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="thumbnail-5" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered position-relative">
+        <div class="row">
+          <img class="img-fluid" src="img/porto-5.jpg" alt="" />
+        </div>
+        <button
+          type="button"
+          class="
+            btn btn-transparent
+            position-absolute
+            top-0
+            start-50
+            translate-middle
+          "
+          data-bs-dismiss="modal"
+        >
+          <i class="bi bi-x fs-1 text-light"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="thumbnail-6" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered position-relative">
+        <div class="row">
+          <img class="img-fluid" src="img/porto-6.jpg" alt="" />
+        </div>
+        <button
+          type="button"
+          class="
+            btn btn-transparent
+            position-absolute
+            top-0
+            start-50
+            translate-middle
+          "
+          data-bs-dismiss="modal"
+        >
+          <i class="bi bi-x fs-1 text-light"></i>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoidGhhcmlxYXVkYWgiLCJhIjoiY2tweXB5dWkxMTVidjJ2cDJzM2tuem5rdyJ9.lIbwLumA1usrqnIkhlLiKQ';
+      const map = new mapboxgl.Map({
+        container: 'map',
+        center: [106.806136, -6.224293],
+        zoom: 18,
+        style: 'mapbox://styles/mapbox/streets-v11',
+      });
+    </script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
