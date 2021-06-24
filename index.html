@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css"
+    />
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
@@ -22,7 +26,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light py-3">
       <div class="container">
         <a href="#" class="navbar-brand">Aruni Tech</a>
         <button
@@ -39,7 +43,7 @@
               <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item ms-3">
-              <a href="#portfolio" class="nav-link">Our Work</a>
+              <a href="#portfolio" class="nav-link">Our Works</a>
             </li>
             <li class="nav-item ms-3">
               <a href="#contact" class="nav-link">Contact</a>
@@ -58,13 +62,18 @@
           <div>
             <h1>
               Improve Your
-              <span class="text-warning">Technology</span>
+              <span class="text-primary">Technology</span>
             </h1>
             <p class="lead my-4">
               We specialize in technology improvement and solving problem. It
               includes Web App Developing, Technology Consultant, and many more.
             </p>
-            <button type="button" class="btn btn-lg btn-primary">
+            <button
+              type="button"
+              class="btn btn-lg btn-primary text-light"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+            >
               <i class="bi bi-arrow-right-short me-1"></i>
               Discuss With Us
             </button>
@@ -102,7 +111,6 @@
               sint vel! Consequuntur delectus tempora suscipit, iure totam
               autem? Quod, ea illum.
             </p>
-            <button class="btn btn-dark">Read More</button>
           </div>
         </div>
       </div>
@@ -124,7 +132,6 @@
                   quidem neque harum expedita. Quae, libero eum nemo temporibus
                   accusamus aperiam.
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
           </div>
@@ -138,7 +145,6 @@
                   quidem neque harum expedita. Quae, libero eum nemo temporibus
                   accusamus aperiam.
                 </p>
-                <a href="#" class="btn btn-light">Read More</a>
               </div>
             </div>
           </div>
@@ -152,7 +158,6 @@
                   quidem neque harum expedita. Quae, libero eum nemo temporibus
                   accusamus aperiam.
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
           </div>
@@ -161,11 +166,11 @@
     </section>
 
     <!-- Our Values -->
-    <section class="p-5 bg-light">
+    <section class="p-5 bg-light text-center">
       <div class="container">
         <h6 class="text-uppercase text-primary">Values</h6>
-        <h5 class="mb-4">We Have Good Experience In Our Fields</h5>
-        <div class="row mb-3 g-4">
+        <h5 class="mb-5">We Have Good Experience In Our Fields</h5>
+        <div class="row justify-content-center mb-4 g-4">
           <div class="col-md-4">
             <h1 class="display-6 text-primary">100+</h1>
             <p>
@@ -183,7 +188,7 @@
             </p>
           </div>
         </div>
-        <div class="row g-4">
+        <div class="row justify-content-center g-4">
           <div class="col-md-4">
             <h1 class="display-6 text-primary">95%</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -204,226 +209,76 @@
       <div class="container">
         <h6 class="text-primary text-uppercase">Portfolio</h6>
         <h5 class="mb-4">Check Our Latest Work</h5>
-        <div class="row g-4">
+        <div id="light-portfolio" class="row g-4">
           <div class="col-md-6 col-lg-4">
-            <div
-              class="
-                card
-                border-dark
-                rounded-circle
-                position-relative
-                card-container
-              "
-            >
-              <img class="card-img" src="img/porto-1.jpg" alt="" />
-              <div
-                class="
-                  container-overlay
-                  position-absolute
-                  top-0
-                  bottom-0
-                  start-0
-                  end-0
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <button
-                  class="btn btn-warning rounded-circle mx-2"
-                  data-bs-toggle="modal"
-                  data-bs-target="#thumbnail-1"
-                >
-                  <i class="bi bi-eye"></i>
-                </button>
-                <button class="btn btn-warning rounded-circle mx-2">
-                  <i class="bi bi-link"></i>
-                </button>
+            <div class="card overflow-hidden item" data-src="img/porto-1.jpg">
+              <img
+                src="./img/porto-1.jpg"
+                alt="portfolio-image"
+                class="img-fluid img-thumbnail"
+              />
+              <div class="container-overlay d-flex">
+                <i class="bi bi-search m-auto fw-bold h5"></i>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div
-              class="
-                card
-                border-dark
-                rounded-circle
-                position-relative
-                card-container
-              "
-            >
-              <img class="card-img" src="img/porto-2.jpg" alt="" />
-              <div
-                class="
-                  container-overlay
-                  position-absolute
-                  top-0
-                  bottom-0
-                  start-0
-                  end-0
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <button
-                  class="btn btn-warning rounded-circle mx-2"
-                  data-bs-toggle="modal"
-                  data-bs-target="#thumbnail-2"
-                >
-                  <i class="bi bi-eye"></i>
-                </button>
-                <button class="btn btn-warning rounded-circle mx-2">
-                  <i class="bi bi-link"></i>
-                </button>
+            <div class="card overflow-hidden item" data-src="img/porto-2.jpg">
+              <img
+                src="./img/porto-2.jpg"
+                alt="portfolio-image"
+                class="img-fluid img-thumbnail"
+              />
+              <div class="container-overlay d-flex">
+                <i class="bi bi-search m-auto fw-bold h5"></i>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div
-              class="
-                card
-                border-dark
-                rounded-circle
-                position-relative
-                card-container
-              "
-            >
-              <img class="card-img" src="img/porto-3.jpg" alt="" />
-              <div
-                class="
-                  container-overlay
-                  position-absolute
-                  top-0
-                  bottom-0
-                  start-0
-                  end-0
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <button
-                  class="btn btn-warning rounded-circle mx-2"
-                  data-bs-toggle="modal"
-                  data-bs-target="#thumbnail-3"
-                >
-                  <i class="bi bi-eye"></i>
-                </button>
-                <button class="btn btn-warning rounded-circle mx-2">
-                  <i class="bi bi-link"></i>
-                </button>
+            <div class="card overflow-hidden item" data-src="img/porto-3.jpg">
+              <img
+                src="./img/porto-3.jpg"
+                alt="portfolio-image"
+                class="img-fluid img-thumbnail"
+              />
+              <div class="container-overlay d-flex">
+                <i class="bi bi-search m-auto fw-bold h5"></i>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div
-              class="
-                card
-                border-dark
-                rounded-circle
-                position-relative
-                card-container
-              "
-            >
-              <img class="card-img" src="img/porto-4.jpg" alt="" />
-              <div
-                class="
-                  container-overlay
-                  position-absolute
-                  top-0
-                  bottom-0
-                  start-0
-                  end-0
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <button
-                  class="btn btn-warning rounded-circle mx-2"
-                  data-bs-toggle="modal"
-                  data-bs-target="#thumbnail-4"
-                >
-                  <i class="bi bi-eye"></i>
-                </button>
-                <button class="btn btn-warning rounded-circle mx-2">
-                  <i class="bi bi-link"></i>
-                </button>
+            <div class="card overflow-hidden item" data-src="img/porto-4.jpg">
+              <img
+                src="./img/porto-4.jpg"
+                alt="portfolio-image"
+                class="img-fluid img-thumbnail"
+              />
+              <div class="container-overlay d-flex">
+                <i class="bi bi-search m-auto fw-bold h5"></i>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div
-              class="
-                card
-                border-dark
-                rounded-circle
-                position-relative
-                card-container
-              "
-            >
-              <img class="card-img" src="img/porto-5.jpg" alt="" />
-              <div
-                class="
-                  container-overlay
-                  position-absolute
-                  top-0
-                  bottom-0
-                  start-0
-                  end-0
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <button
-                  class="btn btn-warning rounded-circle mx-2"
-                  data-bs-toggle="modal"
-                  data-bs-target="#thumbnail-5"
-                >
-                  <i class="bi bi-eye"></i>
-                </button>
-                <button class="btn btn-warning rounded-circle mx-2">
-                  <i class="bi bi-link"></i>
-                </button>
+            <div class="card overflow-hidden item" data-src="img/porto-5.jpg">
+              <img
+                src="./img/porto-5.jpg"
+                alt="portfolio-image"
+                class="img-fluid img-thumbnail"
+              />
+              <div class="container-overlay d-flex">
+                <i class="bi bi-search m-auto fw-bold h5"></i>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div
-              class="
-                card
-                border-dark
-                rounded-circle
-                position-relative
-                card-container
-              "
-            >
-              <img class="card-img" src="img/porto-6.jpg" alt="" />
-              <div
-                class="
-                  container-overlay
-                  position-absolute
-                  top-0
-                  bottom-0
-                  start-0
-                  end-0
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                <button
-                  class="btn btn-warning rounded-circle mx-2"
-                  data-bs-toggle="modal"
-                  data-bs-target="#thumbnail-6"
-                >
-                  <i class="bi bi-eye"></i>
-                </button>
-                <button class="btn btn-warning rounded-circle mx-2">
-                  <i class="bi bi-link"></i>
-                </button>
+            <div class="card overflow-hidden item" data-src="img/porto-6.jpg">
+              <img
+                src="./img/porto-6.jpg"
+                alt="portfolio-image"
+                class="img-fluid img-thumbnail"
+              />
+              <div class="container-overlay d-flex">
+                <i class="bi bi-search m-auto fw-bold h5"></i>
               </div>
             </div>
           </div>
@@ -438,14 +293,14 @@
       <div class="container">
         <h6 class="text-primary text-uppercase">Contact</h6>
         <h5>Get In Touch</h5>
-        <div class="row">
+        <div class="row g-5">
           <div class="col-md">
-            <ul class="list-group list-group-flush lead py-5">
+            <ul class="list-group list-group-flush lead py-2 py-md-5 me-5">
               <li class="list-group-item d-flex align-items-center">
                 <span class="fw-bold me-2"
                   ><i class="bi bi-map me-1"></i> Main Location:
                 </span>
-                108 Sudirman Streen, Jakarta Indonesia
+                108 Sudirman Street, Jakarta Indonesia
               </li>
               <li class="list-group-item d-flex align-items-center">
                 <span class="fw-bold me-2"
@@ -466,39 +321,18 @@
                 aruni@gmail.com
               </li>
             </ul>
+            <button
+              class="btn btn-primary btn-lg text-light my-4 my-md-0"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+            >
+              <i class="bi bi-arrow-right-short me-1"></i>
+              Contact Us
+            </button>
           </div>
           <div class="col-md">
-            <form>
-              <div class="row">
-                <div class="col-md">
-                  <div class="mb-2">
-                    <label for="firstName" class="form-label"
-                      >First Name:</label
-                    >
-                    <input type="text" id="firstName" class="form-control" />
-                  </div>
-                </div>
-                <div class="col-md">
-                  <div class="mb-2">
-                    <label for="lastName" class="form-label">Last Name:</label>
-                    <input type="text" id="lastName" class="form-control" />
-                  </div>
-                </div>
-              </div>
-              <div class="mb-2">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" id="email" class="form-control" />
-              </div>
-              <div class="mb-2">
-                <label for="message" class="form-label">Message:</label>
-                <textarea id="message" class="form-control" rows="4"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Send</button>
-            </form>
+            <div id="map"></div>
           </div>
-        </div>
-        <div class="row py-4">
-          <div id="map"></div>
         </div>
       </div>
     </section>
@@ -519,151 +353,131 @@
     </section>
 
     <!-- Footer -->
-    <section class="p-5 bg-light text-center position-relative">
+    <section class="p-5 bg-light text-center">
       <div class="container">
-        <footer>
-          &copy; Copyright
-          <span class="text-primary fw-bolder">AruniTech</span>. All Rights
-          Reserved.
-        </footer>
+        <div class="row align-items-center g-3">
+          <div class="col-md text-center text-md-start">
+            <footer>
+              &copy; Copyright
+              <span class="text-primary fw-bolder">AruniTech</span>. All Rights
+              Reserved.
+            </footer>
+          </div>
+          <div class="col-md">
+            <a
+              href="https://facebook.com"
+              class="d-inline-block text-dark mx-2"
+            >
+              <i class="bi bi-facebook fs-5"></i>
+            </a>
+            <a href="https://twitter.com" class="d-inline-block text-dark mx-2">
+              <i class="bi bi-twitter fs-5"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              class="d-inline-block text-dark mx-2"
+            >
+              <i class="bi bi-instagram fs-5"></i>
+            </a>
+          </div>
+          <div class="col-md text-center text-md-end">
+            <a href="#" class="ms-auto shadow-lg">
+              <i class="bi bi-arrow-up-circle text-primary h1"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <a href="#" class="position-absolute end-0 top-50 translate-middle me-2">
-        <i class="bi bi-arrow-up-circle text-primary h1"></i>
-      </a>
     </section>
 
     <!-- Modal -->
-    <div class="modal fade" id="thumbnail-1" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered position-relative">
-        <div class="row">
-          <img class="img-fluid" src="img/porto-1.jpg" alt="" />
+    <div class="modal fade" id="contactModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="bi bi-person-lines-fill"></i
+                  ></span>
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="Name..."
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="bi bi-envelope-open"></i
+                  ></span>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Email..."
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject:</label>
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="bi bi-card-heading"></i
+                  ></span>
+                  <input
+                    type="text"
+                    id="subject"
+                    class="form-control"
+                    placeholder="Subject..."
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="bi bi-chat-square"></i
+                  ></span>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="form-control"
+                    placeholder="Message..."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="mt-4 ms-auto">
+                <button type="submit" class="btn btn-primary text-light">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <small class="fst-italic">
+              Send your message and we'll get to you back in soon.
+            </small>
+          </div>
         </div>
-        <button
-          type="button"
-          class="
-            btn btn-transparent
-            position-absolute
-            top-0
-            start-50
-            translate-middle
-          "
-          data-bs-dismiss="modal"
-        >
-          <i class="bi bi-x fs-1 text-light"></i>
-        </button>
-      </div>
-    </div>
-    <div class="modal fade" id="thumbnail-2" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered position-relative">
-        <div class="row">
-          <img class="img-fluid" src="img/porto-2.jpg" alt="" />
-        </div>
-        <button
-          type="button"
-          class="
-            btn btn-transparent
-            position-absolute
-            top-0
-            start-50
-            translate-middle
-          "
-          data-bs-dismiss="modal"
-        >
-          <i class="bi bi-x fs-1 text-light"></i>
-        </button>
-      </div>
-    </div>
-    <div class="modal fade" id="thumbnail-3" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered position-relative">
-        <div class="row">
-          <img class="img-fluid" src="img/porto-3.jpg" alt="" />
-        </div>
-        <button
-          type="button"
-          class="
-            btn btn-transparent
-            position-absolute
-            top-0
-            start-50
-            translate-middle
-          "
-          data-bs-dismiss="modal"
-        >
-          <i class="bi bi-x fs-1 text-light"></i>
-        </button>
-      </div>
-    </div>
-    <div class="modal fade" id="thumbnail-4" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered position-relative">
-        <div class="row">
-          <img class="img-fluid" src="img/porto-4.jpg" alt="" />
-        </div>
-        <button
-          type="button"
-          class="
-            btn btn-transparent
-            position-absolute
-            top-0
-            start-50
-            translate-middle
-          "
-          data-bs-dismiss="modal"
-        >
-          <i class="bi bi-x fs-1 text-light"></i>
-        </button>
-      </div>
-    </div>
-    <div class="modal fade" id="thumbnail-5" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered position-relative">
-        <div class="row">
-          <img class="img-fluid" src="img/porto-5.jpg" alt="" />
-        </div>
-        <button
-          type="button"
-          class="
-            btn btn-transparent
-            position-absolute
-            top-0
-            start-50
-            translate-middle
-          "
-          data-bs-dismiss="modal"
-        >
-          <i class="bi bi-x fs-1 text-light"></i>
-        </button>
-      </div>
-    </div>
-    <div class="modal fade" id="thumbnail-6" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered position-relative">
-        <div class="row">
-          <img class="img-fluid" src="img/porto-6.jpg" alt="" />
-        </div>
-        <button
-          type="button"
-          class="
-            btn btn-transparent
-            position-absolute
-            top-0
-            start-50
-            translate-middle
-          "
-          data-bs-dismiss="modal"
-        >
-          <i class="bi bi-x fs-1 text-light"></i>
-        </button>
       </div>
     </div>
 
-    <script>
-      mapboxgl.accessToken =
-        'pk.eyJ1IjoidGhhcmlxYXVkYWgiLCJhIjoiY2tweXB5dWkxMTVidjJ2cDJzM2tuem5rdyJ9.lIbwLumA1usrqnIkhlLiKQ';
-      const map = new mapboxgl.Map({
-        container: 'map',
-        center: [106.806136, -6.224293],
-        zoom: 18,
-        style: 'mapbox://styles/mapbox/streets-v11',
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
